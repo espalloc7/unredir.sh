@@ -1,7 +1,7 @@
 # unredir.sh
 this tool designed spesifically for bug hunting purposes. it can send too many requests so **use with caution**.
 
-unredir.sh will filter the scope based on their location header. it will send http get request to every endpoint in the scope. if the response has no 'location' header, it will be added to a new file.
+unredir.sh will filter the scope based on their location header. it will send http get request to every endpoint in the scope. if the response has no 'location' header, it will be added to a new file with the suffix of "_no_redir".
 
 # requirements
 to use this script with no errors, you need to have **httpx**(and go obviously) and **parallel** installed on your system. if you have go installed on your system, you can httpx using the command below:
