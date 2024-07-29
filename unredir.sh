@@ -51,5 +51,5 @@ done
 
 wait
 
-cat *${output_suffix} > "$merged_output_file"
+cat ${output_file_prefix}_*${output_suffix} > "$merged_output_file"
 rm ${output_file_prefix}_*
